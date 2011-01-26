@@ -9,11 +9,11 @@ Medical::DukePTP - Calculate the Duke pre-test probability of CAD
 
 =head1 VERSION
 
-Version 0.2
+Version 0.3
 
 =cut
 
-our $VERSION = '0.2';
+our $VERSION = '0.3';
 
 
 =head1 SYNOPSIS
@@ -178,21 +178,21 @@ sub ptp {
 
 Spiros Denaxas, C<< <s.denaxas at gmail.com> >>
 
+=head1 SOURCE CODE
+
+The source code can be found on github L<https://github.com/spiros/Medical-DukePTP>
+
 =head1 BUGS
 
 Please report any bugs or feature requests to C<bug-medical-dukeptp at rt.cpan.org>, or through
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Medical-DukePTP>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc Medical::DukePTP
-
 
 You can also look for information at:
 
@@ -216,13 +216,9 @@ L<http://search.cpan.org/dist/Medical-DukePTP/>
 
 =back
 
-
-=head1 ACKNOWLEDGEMENTS
-
-
 =head1 COPYRIGHT & LICENSE
 
-Copyright 2009 Spiros Denaxas.
+Copyright 2011 Spiros Denaxas.
 
 This program is free software; you can redistribute it and/or modify it
 under the terms of either: the GNU General Public License as published
