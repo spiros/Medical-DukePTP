@@ -9,11 +9,11 @@ Medical::DukePTP - Calculate the Duke pre-test probability of CAD
 
 =head1 VERSION
 
-Version 0.3
+Version 0.4
 
 =cut
 
-our $VERSION = '0.3';
+our $VERSION = '0.4';
 
 
 =head1 SYNOPSIS
@@ -93,7 +93,8 @@ sub ptp {
     ##
     ## validate input params
     
-    foreach my $k qw(age sex) {
+    my $ra_params = [ 'age', 'sex' ];
+    foreach my $k (@$ra_params) {
         return unless 
             ( defined( $rh->{$k} ) );
     }
@@ -101,8 +102,15 @@ sub ptp {
     ##
     ## fill in some defaults 
     
-    for my $k qw(smoking hyperlipidemia 
-                 diabetes previous_MI ECG_Q_wave ECG_ST-T_wave) {
+    my $ra_covars = [
+        'smoking', 
+        'hyperlipidemia',
+        'diabetes', 
+        'previous_MI',
+        'ECG_Q_wave',
+        'ECG_ST-T_wave' ];
+
+    for my $k (@$ra_covars) {
     
         $rh->{$k} ||= 0;
     }
