@@ -75,7 +75,7 @@ Optional parameters
     ECG_ST-T_wave  : ECG ST changes at rest (1 for yes)
     smoking        : current smoker (1 for yes)
     hyperlipidemia : cholesterol > 6.5 mmol/l (>250 mg/dl) (1 for yes)
-    diabetes       : diabetic (1 for yes)
+    diabetes       : type-II diabetic (1 for yes)
     
 This function will return I<undef> on error.
 
